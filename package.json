@@ -1,0 +1,34 @@
+{
+  "name": "ui-design-restorer",
+  "version": "1.0.0",
+  "description": "UI设计还原辅助工具 - 从设计图提取规格并生成前端代码",
+  "main": "ui-design-restorer.js",
+  "bin": {
+    "ui-restorer": "./ui-design-restorer.js"
+  },
+  "scripts": {
+    "analyze": "node ui-design-restorer.js analyze",
+    "extract": "node ui-design-restorer.js extract",
+    "generate": "node ui-design-restorer.js generate",
+    "tokens": "node ui-design-restorer.js tokens"
+  },
+  "keywords": [
+    "ui",
+    "design",
+    "react",
+    "tailwindcss",
+    "design-system",
+    "design-to-code"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
