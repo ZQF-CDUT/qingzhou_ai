@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Analysis</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a2e;
+            color: #63ffff;
+            font-family: monospace;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid #63ffff;
+        }
+        .section h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            image-rendering: pixelated;
+            border: 1px solid #00fa00;
+        }
+        .full-frame {
+            margin-bottom: 30px;
+        }
+        .full-frame img {
+            width: 100%;
+            height: 60px;
+            object-fit: contain;
+            border: 2px solid #63ffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frame.png 区块分析</h1>
+
+    <div class="section full-frame">
+        <h3>完整图片 (1073 x 32px)</h3>
+        <img src="Frame.png" alt="Full Frame">
+    </div>
+
+    <div class="section">
+        <h3>区块1 (0-200px, 200px宽)</h3>
+        <img src="section1.png" alt="Section 1">
+    </div>
+
+    <div class="section">
+        <h3>区块2 (230-369px, 139px宽)</h3>
+        <img src="section2.png" alt="Section 2">
+    </div>
+
+    <div class="section">
+        <h3>区块3 (400-689px, 289px宽)</h3>
+        <img src="section3.png" alt="Section 3">
+    </div>
+
+    <div class="section">
+        <h3>区块4 (720-879px, 159px宽)</h3>
+        <img src="section4.png" alt="Section 4">
+    </div>
+
+    <div class="section">
+        <h3>区块5 (910-1073px, 163px宽)</h3>
+        <img src="section5.png" alt="Section 5">
+    </div>
+
+    <div class="section">
+        <h3>放大版 (2146 x 128px)</h3>
+        <img src="Frame_large.png" alt="Large Frame">
+    </div>
+</body>
+</html>
